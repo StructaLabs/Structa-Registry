@@ -1,0 +1,73 @@
+# .config/devnet/mnde/Structa.toml
+
+[governance]
+network = "devnet"
+slug = "exampledao"
+name = "Example DAO"
+address = "Ex4mp1eDAO1xQbJh2hq4KknbzNt3kYFwXpwjSLR1oAnfi"
+description = "A sample DAO configured for Structa governance on Solana."
+
+[governance.token]
+address = "Token111111111111111111111111111111111111111"
+name = "Example Governance Token"
+symbol = "EGT"
+decimals = 8
+logoURI = "https://example.com/token-logo.png"
+description = "Parameters for the governance token used by the DAO."
+
+[governance.parameters.governor]
+quorum-votes = 4_000_000_00000000
+token-mint = "Token111111111111111111111111111111111111111"
+voting-delay = 86_400
+voting-period = 259_200
+timelock-delay = 86_400
+description = "Governor settings: delay, voting period, quorum, timelock."
+
+[governance.parameters.locker]
+max-stake-vote-multiplier = 10
+min-stake-duration = 86_400
+max-stake-duration = 157_680_000
+proposal-activation-min-votes = 100_000_00000000
+description = "Voting Escrow Locker parameters."
+
+[site]
+aliases = ["dao.example.org"]
+
+[addresses]
+governor = "Ex4mp1eDAO1xQbJh2hq4KknbzNt3kYFwXpwjSLR1oAnfi"
+electorate = "EleCt0rate4x4mpL3JhsXmci67RTS5fjvUuzSYgGov"
+
+[addresses.smart-wallet]
+label = "Smart Wallet"
+type = "smart-wallet"
+address = "Sw9aLL3x4mpvN9U6xVPHzzTCvW1XZmp7bQ9sEhwFxpKu"
+description = "Timelocked multisig wallet used to execute governance actions."
+
+[addresses.executive-council]
+label = "Executive Council"
+type = "smart-wallet"
+address = "CouncilEX4mpvStE6XjcC1NWDZZfeXt7A8Uh3jGJwpShdo"
+description = "Multisig representing trusted protocol contributors."
+
+[addresses.emergency-dao]
+label = "Emergency DAO"
+type = "smart-wallet"
+address = "EMGSwALLeTex9DC4xP6qSHEFgYWdpFeT6D4mxoT6HK7o"
+description = "Fallback multisig with emergency override privileges."
+
+[proposals]
+notice = """\
+Before submitting a proposal, start a discussion on the Example DAO Forum.
+Include the discussion link in your proposal metadata.
+"""
+discussion = {
+  required = true,
+  link = "https://forum.example.org/governance",
+  prefix = "https://forum.example.org/t/"
+}
+
+[links]
+website = "https://example.org"
+discord = "https://discord.gg/example"
+twitter = "https://twitter.com/exampledao"
+github = "https://github.com/exampledao"
