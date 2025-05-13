@@ -31,7 +31,7 @@ jobs:
       - run: yarn install
       - run: yarn generate
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.STRUCTA_REGISTRY_BUILD_DEPLOY_KEY }}
           external_repository: Structa/structa-registry-build
