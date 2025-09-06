@@ -320,13 +320,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tootallnate/once@npm:1":
-  version: 1.1.2
-  resolution: "@tootallnate/once@npm:1.1.2"
-  checksum: e1fb1bbbc12089a0cb9433dc290f97bddd062deadb6178ce9bcb93bb7c1aecde5e60184bc7065aec42fe1663622a213493c48bbd4972d931aae48315f18e1be9
-  languageName: node
-  linkType: hard
-
 "@structa/structa-registry@workspace:.":
   version: 0.0.0-use.local
   resolution: "@structa/structa-registry@workspace:."
@@ -348,7 +341,7 @@ __metadata:
     eslint-import-resolver-node: ^0.3.6
     fast-json-stable-stringify: ^2.1.0
     husky: ^8.0.1
-    jsbi: ^4.3.0
+    jsbi: ^4.3.2
     lint-staged: ^13.0.2
     lodash: ^4.17.21
     prettier: ^2.7.1
@@ -359,6 +352,13 @@ __metadata:
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
+
+"@tootallnate/once@npm:1":
+  version: 1.1.2
+  resolution: "@tootallnate/once@npm:1.1.2"
+  checksum: e1fb1bbbc12089a0cb9433dc290f97bddd062deadb6178ce9bcb93bb7c1aecde5e60184bc7065aec42fe1663622a213493c48bbd4972d931aae48315f18e1be9
+  languageName: node
+  linkType: hard
 
 "@tsconfig/node10@npm:^1.0.7":
   version: 1.0.8
@@ -2493,10 +2493,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsbi@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "jsbi@npm:4.3.0"
-  checksum: 27c4f178eb7fd9d1756144066fdebc62f4a0176e877f55e646e8ce84075c13551bd575a316b9959ccdcca9d5dc05a81c9907cfa09f0cfeb43c9777797e36b0e9
+"jsbi@npm:^4.3.2":
+  version: 4.3.2
+  resolution: "jsbi@npm:4.3.2"
+  checksum: 58e06ea3328c1f455ab92219254b4ac09257fee2b611f4af73c0a6606022bbf2f5b9bf1f6f713eda3c943a842454e8ee0948b0525362cb0182e54e851e8d67c4
   languageName: node
   linkType: hard
 
